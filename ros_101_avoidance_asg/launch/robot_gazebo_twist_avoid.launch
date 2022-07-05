@@ -1,0 +1,9 @@
+<launch>
+  
+  <node name="teleop" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" >
+  <remap from="cmd_vel" to="/source_vel"/>
+  </node>
+  
+  <node name="avoid_twist" pkg="ros_101_perception" type="teleop_avoid.py"/>
+
+</launch>
